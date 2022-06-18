@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.center {
+  text-align: center;
+  color: rgb(63, 137, 63);
+}
+
+.container {
+  width: 450px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.list-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 1em;
+  margin-bottom: 5px;
+}
+
+.list-container:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transform: translateX(70px);
+}
+
+.list-container:hover .btn {
+  transform: translateX(0px);
+}
+.edit {
+  color: green;
+}
+
+.delete {
+  color: red;
+}
+
+.input,
+.add-btn {
+  padding: 0.5em;
+}
+.add-btn {
+  cursor: pointer;
+  background-color: lightgreen;
+  outline: none;
+  border: none;
+  font-size: 0.9rem;
+  letter-spacing: 1.2px;
+}
+
+.input {
+  outline: none;
+}
+
+.clear-list {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  letter-spacing: 1.75px;
+  font-size: 0.9rem;
+}
